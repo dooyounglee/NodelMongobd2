@@ -5,9 +5,3 @@ install:
   - npm install
 script:
   - npm start
-deploy:
-  provider: heroku
-  api_key:
-    secure: $HEROKU_SECRET
-  app: gostbaducking1-mongodb1
-  run: "npm start"
