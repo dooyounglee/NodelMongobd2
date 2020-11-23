@@ -2,6 +2,6 @@ language: node_js
 deploy:
   provider: heroku
   api_key:
-    secure: process.env.heroku_secret
+    secure: $HEROKU_SECRET
   app: gostbaducking1-mongodb1
   run: "npm start"
