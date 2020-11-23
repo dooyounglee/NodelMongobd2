@@ -1,7 +1,10 @@
 language: node_js
 node_js:
-  - "10.15.0"
+  - 10.13.0
 install:
   - npm install
 script:
-  - npm start
+  - npm run test
+branches:
+  only:
+    - master
