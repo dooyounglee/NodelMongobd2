@@ -1,10 +1,13 @@
 language: node_js
 node_js:
   - "10.15.0"
+install:
+  - npm install
+script:
+  - npm start
 deploy:
   provider: heroku
   api_key:
     secure: $HEROKU_SECRET
-  strategy: git
   app: gostbaducking1-mongodb1
   run: "npm start"
