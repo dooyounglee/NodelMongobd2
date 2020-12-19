@@ -10,6 +10,6 @@ before_script:
 script:
   - npm run unit
 #  - npm start
-deploy:
-  provider: heroku
-  api_key: $HEROKU_SECRET
+#deploy:
+#  provider: heroku
+#  api_key: $HEROKU_SECRET
