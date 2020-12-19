@@ -10,3 +10,7 @@ before_script:
 script:
   - npm run unit
 #  - npm start
+deploy:
+  provider: heroku
+  api_key:
+    secure: process.env.HEROKU_SECRET
