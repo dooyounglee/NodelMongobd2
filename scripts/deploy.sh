@@ -1,0 +1,1 @@
+echo "> deploy.sh 실행"

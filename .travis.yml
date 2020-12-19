@@ -1,15 +1,14 @@
-#language: node_js
-#node_js:
-#  - "10.15.3"
-#install:
-#  - npm install
-#script:
-#  - npm start
-#before_script:
-#  - npm install
-#script:
-#  - npm run unit
-#  - npm start
+language: node_js
+node_js:
+  - "10.15.3"
+
+before_script:
+  - npm install
+script:
+  - npm run unit
+
+before_deploy:
+  - cp ./scripts/deploy.sh
 #deploy:
 #  provider: heroku
 #  api_key: $HEROKU_SECRET
