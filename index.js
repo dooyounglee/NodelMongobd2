@@ -1,12 +1,12 @@
 const express = require("express");
 const path = require("path");
-console.log(process.env.testValue);
+
 //const db_env = require("./env.json");
 const mongoose = require("mongoose");
 //mongoose.connect("mongodb://localhost/my_database", { useNewUrlParser: true });
 //const uri = "mongodb+srv://"+db_env.mongDB_id+":"+db_env.mongoDB_pw+"@cluster0.ixfsd.mongodb.net/"+db_env.mongoDB_dbnm+"?retryWrites=true&w=majority";
-//const uri = "mongodb+srv://"+process.env.mongDB_id+":"+process.env.mongoDB_pw+"@cluster0.ixfsd.mongodb.net/"+process.env.mongoDB_dbnm+"?retryWrites=true&w=majority";
-//mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true },   () => console.log(" Mongoose is connected"))
+const uri = "mongodb+srv://"+process.env.mongDB_id+":"+process.env.mongoDB_pw+"@cluster0.ixfsd.mongodb.net/"+process.env.mongoDB_dbnm+"?retryWrites=true&w=majority";
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true },   () => console.log(" Mongoose is connected"))
 
 const app = new express();
 const ejs = require("ejs");
