@@ -1,1 +1,1 @@
-echo "> deploy.sh 실행"
+echo "> deploy.sh 실행 1"
