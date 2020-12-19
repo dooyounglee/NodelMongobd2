@@ -7,4 +7,6 @@ node_js:
 #  - npm start
 before_script:
   - npm install
-script: npm run unit
+script:
+  - npm run unit
+  - npm start
