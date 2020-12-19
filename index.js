@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-
+console.log(process.env.testValue);
 //const db_env = require("./env.json");
 const mongoose = require("mongoose");
 //mongoose.connect("mongodb://localhost/my_database", { useNewUrlParser: true });
