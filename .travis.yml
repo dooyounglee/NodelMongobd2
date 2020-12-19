@@ -12,5 +12,4 @@ script:
 #  - npm start
 deploy:
   provider: heroku
-  api_key:
-    secure: $HEROKU_SECRET
+  api_key: $HEROKU_SECRET
